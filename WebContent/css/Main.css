@@ -2,6 +2,7 @@
 body{
 	margin:0;
  	padding:0;
+ 	font-size:10px;
  	font-family: 'Source Sans Pro';
      animation: fadein 2000ms ease-out;
     -moz-animation: fadein 2000ms ease-out; /* Firefox */
@@ -29,7 +30,10 @@ a { text-decoration: none; color: black; }
     a:hover { text-decoration: none; }
     a:focus { text-decoration: none; }
     a:hover, a:active { text-decoration: none; }
-
+p{
+	font-size: 1.0rem;
+	
+}
 .layout{
 	animation: fadein 1.4s;
 	display: grid;
@@ -54,13 +58,18 @@ a { text-decoration: none; color: black; }
 	width: 560px;
 	border-radius: 2px 2px 30px 30px;
 }
+.header{
+	float: right;
+	
+}
 .header-li{
 	list-style: none;
 	margin-right: 1.8rem;
 	padding:1rem;
-	float:right;
 	border: 0;
 	cursor:pointer;
+	float: left;
+	font-size: 1.0rem;
 }
 .blank_white{
 	background: transparent;
@@ -82,7 +91,7 @@ a { text-decoration: none; color: black; }
 }
 h1{
     display: block;
-    font-size: 2em;
+    font-size: 1.8rem;
     margin-block-start: 0.67em;
     margin-block-end: 0.67em;
     margin-inline-start: 0px;
@@ -112,7 +121,7 @@ h1{
    	justify-content: flex-start;
    	margin:0;
    	background-color: white;
-   	height: 50vh;
+   	height: 100%;
    	width: 100%;
    }
  	.about_title{
@@ -126,7 +135,7 @@ h1{
    .about_title_text{
    position: relative;
    display: inline-block;
-   font-size: 2.4em;
+   font-size: 1.8rem;
    font-weight: 900px;
    margin: 30px 0;
    }
@@ -151,7 +160,7 @@ h1{
    .skillheader{
     position: relative;
     display: inline-block;
-    font-size: 2.4em;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 30px 0;
    }
@@ -165,7 +174,7 @@ h1{
    .contact_header{
     position: relative;
     display: inline-block;
-    font-size: 2.4em;
+    font-size: 1.8rem;
     font-weight: 900;
     margin: 30px 0;
    }
@@ -180,7 +189,7 @@ h1{
    .project_header{
     position: relative;
     display: inline-block;
-    font-size: 2.4em;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 30px 0;
     
@@ -204,6 +213,7 @@ h1{
     background-repeat: no-repeat;
     background-color:white;
     margin-right: 2rem;
+    margin-bottom:5rem;
     cursor:pointer;
     box-shadow:2px 2px 8px 0px #000;
    }
@@ -211,10 +221,10 @@ h1{
   	 visibility:visible;
 	}
 
-   .h2{
+   h2{
     font-family:'Source Sans Pro';
    	display: block;
-    font-size: 0.8em;
+    font-size: 1.3rem;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
     margin-inline-start: 0px;
@@ -259,11 +269,15 @@ h1{
    width: 100%;
     height: 360px;
    }
+   .box_title{
+   	font-size: 1.3rem;
+   }
    .box_name{
 	font-weight: 500;
 	}
 	.box_ul{
 	list-style: none;
+	font-size: 0.9rem;
 	}
 	.box_li{
 	display: inline-block;
@@ -271,10 +285,14 @@ h1{
 	}
 	.box_info{
 	text-align: -webkit-left;
+	font-weight: 400;
 	}
 	.iconimage{
 	width: 35px;
     height: 35px;
+	}
+	.header.active{
+	float:left;
 	}
      @keyframes border{	
      	0%{
@@ -302,12 +320,14 @@ h1{
      }
      .navbar_toggleBtn{
      	display: inline-block;
+     	cursor: pointer;
      }
      .header.active{
      	display: flex;
      }	
      .header-li{
      	padding-left:0;
+     	font-size: 0.8rem;
      }
      .header-li:first-child.active{
      	margin-top:10px;

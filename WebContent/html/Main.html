@@ -15,14 +15,14 @@
  	$(document).ready(function(){
  		$("body").css("display", "none");
  		$("body").fadeIn(2000);
- 		$("a.transition").click(function(event){
+ 		/* $("a.transition").click(function(event){
  		event.preventDefault();
  		linkLocation = this.href;
  		$("body").fadeOut(1000, redirectPage);
  		});
  		function redirectPage() {
  		window.location = linkLocation;
- 		}
+ 		} */
 
 
  		
@@ -57,14 +57,14 @@
 		<div class="header-class">
 			<div>
 				<div class="header_text">
-					<ul class="header">
-						<li class="header-li" id="movecontact">Contact</li>
-						<li class="header-li" id="moveproject">Project</li>
-						<li class="header-li" id="moveskill">Skills</li>
-						<li class="header-li" id="moveabout">About</li> 
+					<ul class="header" >
 						<li class="header-li" id="movehome">Home</li>
+						<li class="header-li" id="moveabout">About</li> 
+						<li class="header-li" id="moveskill">Skills</li>
+						<li class="header-li" id="moveproject">Project</li>
+						<li class="header-li" id="movecontact">Contact</li>
 					</ul>
-					<a href="#" class="navbar_toggleBtn">
+					<a class="navbar_toggleBtn">
 						<i class="fas fa-bars"></i>
 					</a>
 				</div>	
@@ -228,6 +228,8 @@
 	  var i = 0;
 	  var x = '진행중인 Developer 이충현의 포트폴리오 입니다.'; 
 	  var y = "";
+	  
+	  
 	  
 	  function typeWrite() {
 		  if(i < x.length){
