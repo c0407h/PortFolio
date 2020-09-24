@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>~Ing Portpolio</title>
+    <script src="https://kit.fontawesome.com/7a6635554c.js" 
+    crossorigin="anonymous"></script>
+	<script type="text/javascript" src="../js/jquery-1.12.4.js">
+	</script>
+	<link href="https://fonts.google.com/specimen/Source+Sans+Pro?query=sour#glyphs" rel="stylesheet"/>
+	<link href="https://fonts.google.com/specimen/Nanum+Gothic?subset=korean" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/Main.css" />
+ 	<script>
+ 	$(document).ready(function(){
+ 		$("body").css("display", "none");
+ 		$("body").fadeIn(2000);
+ 		$("a.transition").click(function(event){
+ 		event.preventDefault();
+ 		linkLocation = this.href;
+ 		$("body").fadeOut(1000, redirectPage);
+ 		});
+ 		function redirectPage() {
+ 		window.location = linkLocation;
+ 		}
+
+
+ 		
+		$("#movecontact").on("click",function(event){
+			var offset = $("#contact").offset();
+			$("html, body").animate({scrollTop : offset.top},500);
+		});
+		$("#movehome").on("click",function(event){
+			var offset = $("#home").offset();
+			$("html, body").animate({scrollTop : offset.top},500);
+		});
+		$("#moveproject").on("click",function(event){
+			var offset = $("#project").offset();
+			$("html, body").animate({scrollTop : offset.top},500);
+		}); 
+		$("#moveskill").on("click",function(event){
+			var offset = $("#skill").offset();
+			$("html, body").animate({scrollTop : offset.top},500);
+		});
+		$("#moveabout").on("click",function(event){
+			var offset = $("#about").offset();
+			$("html, body").animate({scrollTop : offset.top},500);
+		});
+ 	});
+ </script>
+ 
+ 
+</head>
+<body>
+<div id="root">
+	<div class="layout">
+		<div class="header-class">
+			<div>
+				<div class="header_text">
+					<ul class="header">
+						<li class="header-li" id="movecontact">Contact</li>
+						<li class="header-li" id="moveproject">Project</li>
+						<li class="header-li" id="moveskill">Skills</li>
+						<li class="header-li" id="moveabout">About</li> 
+						<li class="header-li" id="movehome">Home</li>
+					</ul>
+					<a href="#" class="navbar_toggleBtn">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>	
+				<div class="blank_white"></div>	
+			</div>
+		</div>
+	
+		<div class="typer" id="home">
+			<h1 class="typertext" id="typertext">진행중인 Developer 이충현의 포트폴리오 입니다.</h1>
+		</div>	
+	</div>
+	<div class="about" id="about">
+		<div class="about_title">
+			<h1 class="about_title_text">About</h1>  
+		</div>
+		<div class="about_content">
+			<h1>발전하는 개발자</h1>
+			<section class="about_content_section">
+				<p>&nbsp;저는 전자기기에 대한 관심이 높았던만큼 내부에서 사용하는 프로그램에 관해서도 관심이 있었습니다. 
+					<br/>특히 많은 사람들이 주로 접하는 웹 어플리캐이션에 주목하게 되었고 관심 갖고 알아보던 도중 좋은 기회로 국비지원 학원을 통해 ‘자바기반 스마트 웹&콘텐츠 개발자’ 과정을 듣게 되었습니다.
+					<br/>관심만 갖고 있던 것보다 직접 배우게 되니 무궁무진한 매력을 느끼게 되어 웹 개발자가 되기 위해 많은 노력을 하고 있습니다.
+				</p>
+				<p> 저는 항상 지속적으로 발전하고 배워나가야 한다는 마음가짐을 갖고 부족하지만 더 많은 것을 접하고 공부하고 있습니다. 
+					<br/>스스로 무언가를 갈구하고 발전에 대한 생각이 없다면 당연히 시대에 도태되어 버려질 것입니다. 
+					<br/>자연스럽게 시간이 흘러 경력만 쌓아가는 개발자가 아닌 부족한 부분을 파악하여 계속해서 채워나가 ‘발전하는’ 개발자가 되고 싶습니다.
+				</p>
+			</section>
+		</div>
+	</div> 
+	<div class="skill" id="skill">
+		<h1 class="skillheader">Skill</h1>
+		<div class="skillcontent">
+			<h2 class="skilltitle">Launage</h2>
+				<div class="skillbox">
+				
+					<div class="skilllogo" style="background-image: url('../image/javalogo.jpg');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/JavaSciprtlogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/swiftlogo.png');">
+						<div class="skilllabel">Basic</div>
+					</div>
+				</div>
+			<h2 class="skilltitle">Wep Skill</h2>
+				<div class="skillbox">
+					<div class="skilllogo" style="background-image: url('../image/htmllogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/csslogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/jquerylogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/JavaSciprtlogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div> 
+				</div>
+			<h2 class="skilltitle">Frame Work</h2>
+				<div class="skillbox">
+					<div class="skilllogo" style="background-image: url('../image/springlogo.jpg');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/mybatislogo.jpeg');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+
+				</div>
+			<h2 class="skilltitle">DataBase</h2>
+				<div class="skillbox">
+					<div class="skilllogo" style="background-image: url('../image/oraclelogo.png');">
+						<div class="skilllabel">Intermediate</div>
+					</div>
+
+				</div>
+			<h2 class="skilltitle">Operating System</h2>
+				<div class="skillbox">
+					<div class="skilllogo" style="background-image: url('../image/macoslogo.png');">
+					</div>
+					<div class="skilllogo" style="background-image: url('../image/windowlogo.png');">
+					</div>
+
+				</div>
+		</div> 
+	</div>
+	<div class="project" id="project">
+		<header class="project_title">
+			<h1 class="project_header">Project</h1>
+			<div class="projcet_wrap">
+				<div class="project_content">
+					<div class="row">
+						<div class="box">
+							<div class="box_image">
+							<a href="https://github.com/c0407h/PlayingYut/tree/master/WebContent" target="_blank"><img src="../image/playyut.png" alt="playingyut" target="_blank" class="image"></a></div>
+							<div class="box_info">
+								<h1 class="box_title">윷놀이 게임</h1>
+								<h2 class="box_name">개발 기간 :2020.04.20 ~ 2020.05.11</h2>
+								<p class="box_content">JavaScript, Html, Css를 활용하여 구현한 간단한 윷놀이 게임.</p>
+								<ul class="box_ul">
+									<li class="box_li">#JavaScript</li>
+									<li class="box_li">#Html</li>
+									<li class="box_li">#Css</li>
+									<li class="box_li">#JQuery</li>
+								</ul>
+								<ul class="box_ul">
+									<li class="box_li">
+										<a href="https://github.com/c0407h/PlayingYut/tree/master/WebContent" alt="github" target="_blank">
+											<img src="../image/gihutlogo.png" alt="github" class="iconimage">	
+										</a>
+									</li>
+									<li class="box_li">
+										<a href="https://c0407h.github.io/PlayingYut/WebContent/html/playingyut.html" alt="GoToGame" target="_blank"> 게임 해보기 
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="box">
+							<div class="box_image">
+							<a href="https://github.com/c0407h/VanillaERPProject/tree/master/src/main/webapp/WEB-INF/views" target="_blank"><img src="../image/VanillaERP.png" alt="VanillaERP" class="image"></a></div>
+							<div class="box_info">
+								<h1 class="box_title">Vanill ERP</h1>
+								<h2 class="box_name">개발 기간 :2020.02.17 ~ 2020.07.31</h2>
+								<p class="box_content">JavaScript, Html, Css, OracleDB를 활용하여 구현한 ERP시스템</br>(주요 기능 : 로그인, 권한이 부여된 아이디 별 사용 기능 제한, 게시판 조회, 게시글 등록, 수정)</p>
+								<ul class="box_ul">
+									<li class="box_li">#JavaScript</li>
+									<li class="box_li">#Html</li>
+									<li class="box_li">#Css</li>
+									<li class="box_li">#Spring FrameWork</li>
+									<li class="box_li">#JQuery</li>
+									<li class="box_li">#OracleDB</li>
+								</ul>
+								
+								<ul class="box_ul">
+									<li class="box_li">
+										<a href="https://github.com/c0407h/VanillaERPProject/tree/master/src/main/webapp/WEB-INF/views" alt="github" target="_blank">
+											<img src="../image/gihutlogo.png" alt="github" class="iconimage">	
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+	</div>
+	
+	<div class="contact" id="contact">
+		<h1 class="contact_header">Contact Me!</h1>
+		<p class="email">Email : c0407h@gmail.com </p>
+		<a href="https://github.com/c0407h?tab=repositories" target="_blank"><img src="../image/github-logo.76d344f0.svg" alt="Github" class="github"></img></a>
+	</div>
+	
+</div>
+
+  <script type="text/javascript" defer="defer">
+	$(document).ready(function(){
+	  var i = 0;
+	  var x = '진행중인 Developer 이충현의 포트폴리오 입니다.'; 
+	  var y = "";
+	  
+	  function typeWrite() {
+		  if(i < x.length){
+			  
+			  $("#typertext").text(y+=x[i]);
+			  i++;
+			  
+			  setTimeout(typeWrite, 100); 
+			 
+		  }
+	  }
+	  typeWrite();
+	});
+	  const toggleBtn = document.querySelector('.navbar_toggleBtn');
+		const menu = document.querySelector('.header');
+		const list = document.querySelector('.header-li');
+		
+		toggleBtn.addEventListener('click', () => {
+			menu.classList.toggle('active');
+			list.classList.toggle('active');
+			});
+	
+  </script>
+
+	
+</body>
+</html>

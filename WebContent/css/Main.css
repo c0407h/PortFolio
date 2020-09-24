@@ -1,0 +1,317 @@
+@charset "UTF-8";
+body{
+	margin:0;
+ 	padding:0;
+ 	font-family: 'Source Sans Pro';
+     animation: fadein 2000ms ease-out;
+    -moz-animation: fadein 2000ms ease-out; /* Firefox */
+    -webkit-animation: fadein 2000ms ease-out; /* Safari and  Chrome */
+    -o-animation: fadein 2000ms ease-out; /* Opera */
+}
+@keyframes fadein {
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {opacity:0;}
+    to {opacity:1;}
+}
+@-o-keyframes fadein { /* Opera */
+    from {opacity:0;}
+    to {opacity: 1;}
+}
+a { text-decoration: none; color: black; }
+    a:visited { text-decoration: none; }
+    a:hover { text-decoration: none; }
+    a:focus { text-decoration: none; }
+    a:hover, a:active { text-decoration: none; }
+
+.layout{
+	animation: fadein 1.4s;
+	display: grid;
+	height:100%;
+	margin:0;
+	padding:0;
+}  	
+.header-class{
+	position: fixed;
+	width: 95vw;
+}
+.header_text{
+	display: flex; 
+   	justify-content: space-between;
+   	align-items: center; 
+   	padding: 8px 12px;
+   	min-height: 24px;
+	float:right;
+	background:rgba(0,0,0,.6);
+	color:#fff;
+	height: 35px;
+	width: 560px;
+	border-radius: 2px 2px 30px 30px;
+}
+.header-li{
+	list-style: none;
+	margin-right: 1.8rem;
+	padding:1rem;
+	float:right;
+	border: 0;
+	cursor:pointer;
+}
+.blank_white{
+	background: transparent;
+	width:40%;
+	height: 64px;
+}
+.typer{
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+	height: 100vh;
+	background-image: url("../image/mainpoto3.JPG"); 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+	width: 100%;
+}
+h1{
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.typertext{
+	color:white;
+	font-family:'Nanum Gothic';
+    border-right: .1em solid #fff;
+    font-size: 4vw;
+    white-space: pre;
+    line-height: 1;
+    letter-spacing: .1rem;
+    padding-top: .2em;
+    -webkit-animation: blink 1s step-end infinite;
+    animation: border 1s step-end infinite;
+}
+.navbar_toggleBtn{
+	display:none;
+	position:absolute;
+	font-size:24px;
+	color: white;
+}
+   .about{
+   	display: flex;
+   	justify-content: flex-start;
+   	margin:0;
+   	background-color: white;
+   	height: 50vh;
+   	width: 100%;
+   }
+ 	.about_title{
+   	margin-left: 6vw;
+   margin-right: 12vw;
+   width: 25vw;
+   box-sizing: border-box;
+   text-align: center;
+   align-self: center;
+}
+   .about_title_text{
+   position: relative;
+   display: inline-block;
+   font-size: 2.4em;
+   font-weight: 900px;
+   margin: 30px 0;
+   }
+   .about_content{
+   font-family: 'Nanum Gothic';
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    box-sizing: border-box;
+    padding: 1rem;
+    margin-right: 8vw;
+    width: 100%;
+   }  
+   .skill{
+    height: 100%;
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-weight: 900;
+    background-color: #D9E5FF;
+   }
+   .skillheader{
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 30px 0;
+   }
+   .contact{
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+   }
+   .contact_header{
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 900;
+    margin: 30px 0;
+   }
+   .email{
+    font-size: 1.9em;
+    font-weight: 900;
+   }
+   .github{
+    width: 78px;
+    height: 90px;
+   }
+   .project_header{
+    position: relative;
+    display: inline-block;
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 30px 0;
+    
+   }
+   .project{
+   height: 100%;
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+    font-weight: 900;
+    background-color: #D5D5D5;
+   }
+   .skilllogo{
+   	text-align: center;
+    display: inline-block;
+    width: 114px;
+    height: 116px;
+    border-radius: 30px 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:white;
+    margin-right: 2rem;
+    cursor:pointer;
+    box-shadow:2px 2px 8px 0px #000;
+   }
+   .skilllogo:hover .skilllabel{
+  	 visibility:visible;
+	}
+
+   .h2{
+    font-family:'Source Sans Pro';
+   	display: block;
+    font-size: 0.8em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+   }
+   .skilllabel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    border-radius: 30px 30px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    opacity: .8;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #fff;
+    visibility: hidden;
+   }
+   .row{
+   display: flex;
+    flex-wrap: wrap;
+   }
+   .box{
+    height: 360px;
+    width: 100%;
+    max-width: 80vw;
+    border-radius: 4px;
+    margin: 0 auto 30px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,.2), 0 3px 6px rgba(0,0,0,.2);
+   }
+   .box_image{
+   float: left;
+    width: 35%;
+    height: 360px;
+    margin-right: 2rem;
+   }
+   .image{
+   width: 100%;
+    height: 360px;
+   }
+   .box_name{
+	font-weight: 500;
+	}
+	.box_ul{
+	list-style: none;
+	}
+	.box_li{
+	display: inline-block;
+    cursor: pointer;
+	}
+	.box_info{
+	text-align: -webkit-left;
+	}
+	.iconimage{
+	width: 35px;
+    height: 35px;
+	}
+     @keyframes border{	
+     	0%{
+			border-color:transparent;
+     	} 
+     	50%{
+			border-color:white;   
+     	}
+     	100%{
+     		border-color:transparent;
+     	}
+     }
+     
+     @media screen and (max-width: 768px){
+   	 .header_text{
+   	 	 flex-direction: column;
+   	 	 width:8%;
+   	 	 height: 100%;
+   	 }
+     .header{
+	   	 display:none;
+	   	 flex-direction: column;
+	   	 align-items: center;
+	   	 width: 100%;
+     }
+     .navbar_toggleBtn{
+     	display: inline-block;
+     }
+     .header.active{
+     	display: flex;
+     }	
+     .header-li{
+     	padding-left:0;
+     }
+     .header-li:first-child.active{
+     	margin-top:10px;
+     }
+
+     }
+   
