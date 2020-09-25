@@ -250,7 +250,7 @@ h1{
     flex-wrap: wrap;
    }
    .box{
-    height: 360px;
+    height: 100%;
     width: 100%;
     max-width: 80vw;
     border-radius: 4px;
@@ -277,12 +277,15 @@ h1{
 	.box_ul{
 	list-style: none;
 	font-size: 0.9rem;
+    margin-bottom: 0;
+    margin-top: 3px;
 	}
 	.box_li{
 	display: inline-block;
     cursor: pointer;
 	}
 	.box_info{
+	
 	text-align: -webkit-left;
 	font-weight: 400;
 	}
